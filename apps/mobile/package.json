@@ -11,6 +11,8 @@
     "type-check": "tsc --noEmit",
     "start": "react-native start",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "prepare": "husky"
   },
   "dependencies": {
@@ -34,6 +36,8 @@
     "@react-native/eslint-config": "^0.82.1",
     "@react-native/metro-config": "^0.82.1",
     "@react-native/typescript-config": "^0.82.1",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.3.3",
     "@types/jest": "^29.5.13",
     "@types/react": "^19.1.1",
     "@types/react-test-renderer": "^19.1.0",
