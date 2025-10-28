@@ -1,5 +1,6 @@
 ---
 description: IssueからADR（Architecture Decision Record）を作成する
+allowwed-tools: Bash(gh issue view:*)
 ---
 
 IssueからADR（Architecture Decision Record）を作成します。以下の手順に従ってください：
@@ -59,14 +60,11 @@ IssueからADR（Architecture Decision Record）を作成します。以下の�
    ```
 
 4. **ADRファイルの保存**:
-   - `docs/adr/`ディレクトリが存在しない場合は作成
-   - ADR番号は既存のADRファイル数+1で自動採番
-   - ファイル名: `docs/adr/NNNN-brief-title.md` (例: `0001-use-postgresql.md`)
+   - ファイル名: `docs/adr/{issue番号}.md` (例: `12.md`)
    - ファイル作成後、パスをユーザーに表示
 
 5. **エッジケースへの対応**:
    - GitHub CLIが認証されていない場合は、認証を促す
-   - `docs/adr/`ディレクトリが存在しない場合は自動作成
    - 既存のADRと番号が重複しないように確認
 
 プロセス全体を通して、ユーザーとの対話を重視し、より良い設計決定ができるようサポートしてください。
