@@ -9,6 +9,24 @@ kimu - Knowledge Management Tool
 React + TypeScript で構築するナレッジマネジメントツール。
 テストは Jest（単体テスト）と Playwright/Cypress（E2Eテスト）を使用。
 
+## MCP Servers
+
+このプロジェクトでは以下のMCPサーバーを使用します：
+
+### context7
+コードベースの深い理解と検索を提供。コード解析、依存関係の追跡、セマンティック検索が可能。
+- 設定: `./mcp.json`
+
+### serena
+プロジェクト管理とタスクトラッキング。Issue、マイルストーン、プロジェクトボードの操作が可能。
+- 設定: `./mcp.json`
+- 環境変数: なし
+
+### filesystem
+ローカルファイルシステムへの安全なアクセス。ファイル読み書き、ディレクトリ操作が可能。
+- 設定: `.mcp.json`
+- 対象ディレクトリ: `/Users/yoshidayuuhei/product/kimu`
+
 ## Custom Commands
 
 ### /issue
