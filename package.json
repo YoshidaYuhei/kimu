@@ -2,9 +2,6 @@
   "name": "kimu",
   "version": "1.0.0",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
   "scripts": {
     "mobile": "cd apps/mobile && npm start",
     "mobile:ios": "cd apps/mobile && npm run ios",
