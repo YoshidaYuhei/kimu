@@ -66,4 +66,15 @@ ADR（Architecture Decision Record）の内容を元に、実装に対するテ�
    - テストコード生成後、実行コマンドを提示
    - 必要に応じてテストを実行し、結果を確認
 
+8. **依存関係の事前チェック**:
+   テストコード生成前に以下を確認：
+
+   - Jest設定ファイル（jest.config.js）の存在
+   - 必要なテストライブラリのインストール確認：
+     - @testing-library/react-native
+     - @testing-library/jest-dom (必要に応じて)
+     - jest-environment-jsdom (必要に応じて)
+
+   不足している場合は、インストールコマンドを提示し、ユーザーの承認を得てからインストール。
+
 プロセス全体を通して、ADRの決定内容を正確に反映したテストコードを生成し、TypeScriptの型安全性を活かしたテストを心がけてください。
